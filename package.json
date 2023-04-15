@@ -1,12 +1,18 @@
 {
   "name": "@danieldesira/daniels-connect4-common",
-  "version": "0.1b",
+  "version": "0.1.1",
+  "author": "Daniel Desira",
   "description": "NPM package with common Daniel's Connect4 functionality.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "devDependencies": {
     "typescript": "^5.0.3"
   },
   "scripts": {
     "build": "tsc"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/danieldesira/DanielsConnect4Common/issues",
+    "email": "desiradaniel2007@gmail.com"
+  },
+  "homepage": "https://github.com/danieldesira/DanielsConnect4Common/"
 }
