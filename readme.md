@@ -2,6 +2,12 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.3 (Beta - 16/04/2023)
+* Sort issue with build by prebuilding and republishing
+
+### 0.1.2 (Beta - 16/04/2023)
+* Included putDot() method
+
 ### 0.1.1 (Beta - 15/04/2023)
 * Attempt to fix library entry
 

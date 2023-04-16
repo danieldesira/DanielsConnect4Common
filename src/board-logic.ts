@@ -91,5 +91,15 @@ export class BoardLogic {
         }
         return full;
     }
+
+    public static putDot(board: Array<Array<Dot>>, color: Dot, column: number): number {
+        for (let row = BoardLogic.rows - 1; row >= 0; row--) {
+            if (board[column][row] === Dot.Empty) {
+                board[column][row] = color;
+                return row;
+            }
+        }
+        return -1;
+    }
     
 }
