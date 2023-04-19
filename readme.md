@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.6 (Beta - 19/04/2023)
+* Sort issue with build by prebuilding and republishing
+
 ### 0.1.5 (Beta - 19/04/2023)
 * Include PlayerNameMessage model
 
