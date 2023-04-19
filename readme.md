@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.5 (Beta - 19/04/2023)
+* Include PlayerNameMessage model
+
 ### 0.1.4 (Beta - 16/04/2023)
 * Include network data models
 
