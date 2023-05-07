@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.7 (Beta - 07/05/2023)
+* Dot enum reverted to numerical values abstracting away from front-end
+
 ### 0.1.6 (Beta - 19/04/2023)
 * Sort issue with build by prebuilding and republishing
 

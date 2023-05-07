@@ -1,5 +1,5 @@
 export enum Dot {
-    Empty = 'lightyellow',
-    Red = 'red',
-    Green = 'greenyellow'
+    Empty = 0,
+    Red = 1,
+    Green = 2
 }
