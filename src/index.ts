@@ -8,6 +8,7 @@ import { PlayerNameMessage } from "./models/player-name-message";
 import { SkipTurnMessage } from "./models/skip-turn-message";
 import { TieMessage } from "./models/tie-message";
 import { WinnerMessage } from "./models/winner-message";
+import { randomiseColor } from "./randomise";
 
 export const DanielsConnect4Common = {
     BoardLogic,
@@ -19,5 +20,6 @@ export const DanielsConnect4Common = {
     SkipTurnMessage,
     WinnerMessage,
     TieMessage,
-    PlayerNameMessage
+    PlayerNameMessage,
+    randomiseColor
 };
