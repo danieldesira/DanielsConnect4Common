@@ -1,7 +1,7 @@
 import { Dot } from "../enums/dot";
-import { GameMessage } from "./game-message";
+import GameMessage from "./game-message";
 
-export class InitialMessage extends GameMessage {
+export default class InitialMessage extends GameMessage {
     public constructor(gameId: number, opponentName: string, color: Dot) {
         super();
         this.gameId = gameId;

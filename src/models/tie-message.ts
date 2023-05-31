@@ -1,6 +1,6 @@
-import { GameMessage } from "./game-message";
+import GameMessage from "./game-message";
 
-export class TieMessage extends GameMessage {
+export default class TieMessage extends GameMessage {
     public constructor(tie: boolean = true) {
         super();
         this.tie = tie;

@@ -2,6 +2,12 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.9 (Beta - 31/05/2023)
+* Set default exports
+
+### 0.1.8 (Beta - 23/05/2023)
+* Introduced randomiseColor() function
+
 ### 0.1.7 (Beta - 07/05/2023)
 * Dot enum reverted to numerical values abstracting away from front-end
 

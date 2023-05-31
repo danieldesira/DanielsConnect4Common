@@ -1,6 +1,6 @@
-import { GameMessage } from "./game-message";
+import GameMessage from "./game-message";
 
-export class PlayerNameMessage extends GameMessage {
+export default class PlayerNameMessage extends GameMessage {
     public constructor(name: string) {
         super();
         this.name = name;

@@ -1,6 +1,6 @@
 import { Dot } from "./enums/dot"
 
-export class BoardLogic {
+export default class BoardLogic {
 
     public static columns: number = 9;
     public static rows: number = 8;

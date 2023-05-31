@@ -1,6 +1,6 @@
-import { GameMessage } from "./game-message";
+import GameMessage from "./game-message";
 
-export class ActionMessage extends GameMessage {
+export default class ActionMessage extends GameMessage {
     public constructor(column: number, action: string) {
         super();
         this.column = column;

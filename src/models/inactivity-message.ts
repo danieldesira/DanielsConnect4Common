@@ -1,7 +1,7 @@
 import { Dot } from "../enums/dot";
-import { GameMessage } from "./game-message";
+import GameMessage from "./game-message";
 
-export class InactivityMessage extends GameMessage {
+export default class InactivityMessage extends GameMessage {
     public constructor(endGame: boolean, currentTurn: Dot) {
         super();
         this.endGameDueToInactivity = endGame;
