@@ -1,75 +1,75 @@
-import { Dot } from "./enums/dot"
+import { Coin } from "./enums/coin"
 
 export default class BoardLogic {
 
     public static columns: number = 9;
     public static rows: number = 8;
 
-    public static initBoard(board: Array<Array<Dot>>) {
+    public static initBoard(board: Array<Array<Coin>>) {
         for (let col = 0; col < BoardLogic.columns; col++) {
             board[col] = new Array(BoardLogic.rows);
             for (let row = 0; row < BoardLogic.rows; row++){
-                board[col][row] = Dot.Empty;
+                board[col][row] = Coin.Empty;
             }
         }
     }
 
-    public static countConsecutiveDots(board: Array<Array<Dot>>, column: number, row: number, currentTurn: Dot): number {
+    public static countConsecutiveCoins(board: Array<Array<Coin>>, column: number, row: number, currentTurn: Coin): number {
         let count: number = row;
-        let dotCount: number = 0;
+        let coinCount: number = 0;
 
         // Vertical check
-        while (dotCount < 4 && count < BoardLogic.rows && board[column][count] === currentTurn) {
-            dotCount++;
+        while (coinCount < 4 && count < BoardLogic.rows && board[column][count] === currentTurn) {
+            coinCount++;
             count++;
         }
         
-        if (dotCount < 4) {
+        if (coinCount < 4) {
 
             // Horizontal check
-            dotCount = 0;
+            coinCount = 0;
             count = column;
             while (count < BoardLogic.columns && board[count][row] === currentTurn) {
-                dotCount++;
+                coinCount++;
                 count++;
             }
             count = column - 1;
             while (count > -1 && board[count][row] === currentTurn) {
-                dotCount++;
+                coinCount++;
                 count--;
             }
         
             // Diagonal checks
-            if (dotCount < 4) {
-                dotCount = 0;
+            if (coinCount < 4) {
+                coinCount = 0;
                 let rowCount: number = row - 1;
                 let colCount: number = column + 1;
-                while (dotCount < 4 && rowCount > -1 &&  colCount < BoardLogic.columns && board[colCount][rowCount] === currentTurn) {
-                    dotCount++;
+                while (coinCount < 4 && rowCount > -1 &&  colCount < BoardLogic.columns && board[colCount][rowCount] === currentTurn) {
+                    coinCount++;
                     colCount++; //right columns
                     rowCount--; //upper rows
                 }
                 colCount = column;
                 rowCount = row;
-                while (dotCount < 4 && rowCount < BoardLogic.rows && colCount > -1 && board[colCount][rowCount] === currentTurn) {
-                    dotCount++;
+                while (coinCount < 4 && rowCount < BoardLogic.rows && colCount > -1 && board[colCount][rowCount] === currentTurn) {
+                    coinCount++;
                     colCount--; // left columns
                     rowCount++; // lower rows
                 }
                 
-                if (dotCount < 4) {
-                    dotCount = 0;
+                if (coinCount < 4) {
+                    coinCount = 0;
                     rowCount = row - 1;
                     colCount = column - 1;
-                    while (dotCount < 4 && rowCount > -1 && colCount > -1 && board[colCount][rowCount] === currentTurn) {
-                        dotCount++;
+                    while (coinCount < 4 && rowCount > -1 && colCount > -1 && board[colCount][rowCount] === currentTurn) {
+                        coinCount++;
                         colCount--; // left columns
                         rowCount--; // upper rows
                     }
                     colCount = column;
                     rowCount = row;
-                    while (dotCount < 4 && rowCount < BoardLogic.rows && colCount < BoardLogic.columns && board[colCount][rowCount] === currentTurn) {
-                        dotCount++;
+                    while (coinCount < 4 && rowCount < BoardLogic.rows && colCount < BoardLogic.columns && board[colCount][rowCount] === currentTurn) {
+                        coinCount++;
                         colCount++; // right columns
                         rowCount++; // lower rows
                     }
@@ -77,14 +77,14 @@ export default class BoardLogic {
             }
         }
 
-        return dotCount;
+        return coinCount;
     }
 
-    public static isBoardFull(board: Array<Array<Dot>>): boolean {
+    public static isBoardFull(board: Array<Array<Coin>>): boolean {
         let full: boolean = true;
         for (let col: number = 0; col < BoardLogic.columns; col++) {
             // Check upper row in every column
-            if (board[col][0] === Dot.Empty) {
+            if (board[col][0] === Coin.Empty) {
                 full = false;
                 break;
             }
@@ -92,9 +92,9 @@ export default class BoardLogic {
         return full;
     }
 
-    public static putDot(board: Array<Array<Dot>>, color: Dot, column: number): number {
+    public static putCoin(board: Array<Array<Coin>>, color: Coin, column: number): number {
         for (let row = BoardLogic.rows - 1; row >= 0; row--) {
-            if (board[column][row] === Dot.Empty) {
+            if (board[column][row] === Coin.Empty) {
                 board[column][row] = color;
                 return row;
             }

@@ -1,5 +1,5 @@
 import BoardLogic from "./board-logic";
-import { Dot } from "./enums/dot";
+import { Coin } from "./enums/coin";
 import ActionMessage from "./models/action-message";
 import GameMessage from "./models/game-message";
 import InactivityMessage from "./models/inactivity-message";
@@ -12,7 +12,7 @@ import randomiseColor from "./randomise";
 
 export const DanielsConnect4Common = {
     BoardLogic,
-    Dot,
+    Coin,
     ActionMessage,
     GameMessage,
     InactivityMessage,

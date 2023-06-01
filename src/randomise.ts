@@ -1,5 +1,5 @@
-import { Dot } from "./enums/dot";
+import { Coin } from "./enums/coin";
 
-export default function randomiseColor(): Dot {
+export default function randomiseColor(): Coin {
     return Math.floor(Math.random() * 2) + 1;
 }

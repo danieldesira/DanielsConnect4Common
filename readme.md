@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.10 (Beta - 01/06/2023)
+* Renamed instances of Dot to Coin
+
 ### 0.1.9 (Beta - 31/05/2023)
 * Set default exports
 
