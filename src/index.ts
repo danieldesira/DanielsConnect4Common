@@ -2,6 +2,7 @@ import BoardLogic from "./board-logic";
 import { Coin } from "./enums/coin";
 import ActionMessage from "./models/action-message";
 import CurrentTurnMessage from "./models/current-turn-message";
+import DisconnectMessage from "./models/disconnect-message";
 import GameMessage from "./models/game-message";
 import InactivityMessage from "./models/inactivity-message";
 import InitialMessage from "./models/initial-message";
@@ -23,5 +24,6 @@ export const DanielsConnect4Common = {
     TieMessage,
     PlayerNameMessage,
     CurrentTurnMessage,
+    DisconnectMessage,
     randomiseColor
 };

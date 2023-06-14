@@ -27,5 +27,9 @@ export default class GameMessage {
     public static isCurrentTurnMessage(msg: any): boolean {
         return msg['currentTurn'];
     }
+
+    public static isDisconnectMessage(msg: any): boolean {
+        return msg['hardDisconnect'];
+    }
     
 }
