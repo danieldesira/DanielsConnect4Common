@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.12 (Beta - 14/06/2023)
+* Fixed export for CurrentTurnMessage model
+
 ### 0.1.11 (Beta - 14/06/2023)
 * Added CurrentTurnMessage model
 
