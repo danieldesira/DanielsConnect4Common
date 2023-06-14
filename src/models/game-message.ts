@@ -23,5 +23,9 @@ export default class GameMessage {
     public static isTieMessage(msg: any): boolean {
         return msg['tie'];
     }
+
+    public static isCurrentTurnMessage(msg: any): boolean {
+        return msg['currentTurn'];
+    }
     
 }
