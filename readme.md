@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.11 (Beta - 14/06/2023)
+* Added CurrentTurnMessage model
+
 ### 0.1.10 (Beta - 01/06/2023)
 * Renamed instances of Dot to Coin
 
