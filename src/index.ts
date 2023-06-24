@@ -4,7 +4,6 @@ import ActionMessage from "./models/action-message";
 import CurrentTurnMessage from "./models/current-turn-message";
 import DisconnectMessage from "./models/disconnect-message";
 import GameMessage from "./models/game-message";
-import InactivityMessage from "./models/inactivity-message";
 import InitialMessage from "./models/initial-message";
 import PlayerNameMessage from "./models/player-name-message";
 import SkipTurnMessage from "./models/skip-turn-message";
@@ -17,7 +16,6 @@ export const DanielsConnect4Common = {
     Coin,
     ActionMessage,
     GameMessage,
-    InactivityMessage,
     InitialMessage,
     SkipTurnMessage,
     WinnerMessage,

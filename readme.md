@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.15 (Beta - )
+* Removed inactivity model
+
 ### 0.1.14 (Beta - 14/06/2023)
 * Introduced ` DisconnectMessage ` model
 
