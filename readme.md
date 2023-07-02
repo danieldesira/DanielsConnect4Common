@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.16 (Beta - 02/07/2023)
+* Added ` color ` property to ` ActionMessage ` model
+
 ### 0.1.15 (Beta - 02/07/2023)
 * Removed inactivity model
 * Introduced ` switchTurn() ` function
