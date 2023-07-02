@@ -2,6 +2,10 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.17 (Beta - 02/07/2023)
+* Added ` color ` check for ` isActionMessage() ` method
+* Introduced ` ErrorMessage ` model
+
 ### 0.1.16 (Beta - 02/07/2023)
 * Added ` color ` property to ` ActionMessage ` model
 

@@ -9,7 +9,7 @@ export default class GameMessage {
     }
 
     public static isActionMessage(msg: any): boolean {
-        return msg['action'] && !isNaN(msg['column']);
+        return msg['action'] && !isNaN(msg['column']) && msg['color'];
     }
 
     public static isSkipTurnMessage(msg: any): boolean {
@@ -30,6 +30,10 @@ export default class GameMessage {
 
     public static isDisconnectMessage(msg: any): boolean {
         return msg['hardDisconnect'];
+    }
+
+    public static isErrorMessage(msg: any): boolean {
+        return msg['error'];
     }
     
 }
