@@ -14,5 +14,10 @@
     "url": "https://github.com/danieldesira/DanielsConnect4Common/issues",
     "email": "desiradaniel2007@gmail.com"
   },
-  "homepage": "https://github.com/danieldesira/DanielsConnect4Common/"
+  "homepage": "https://github.com/danieldesira/DanielsConnect4Common/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldesira/DanielsConnect4Common/"
+  },
+  "license": "GNU GPL"
 }
