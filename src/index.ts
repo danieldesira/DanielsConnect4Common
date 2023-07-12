@@ -1,30 +1,14 @@
-import BoardLogic from "./board-logic";
-import { Coin } from "./enums/coin";
-import ActionMessage from "./models/action-message";
-import CurrentTurnMessage from "./models/current-turn-message";
-import DisconnectMessage from "./models/disconnect-message";
-import ErrorMessage from "./models/error-message";
-import GameMessage from "./models/game-message";
-import InitialMessage from "./models/initial-message";
-import PlayerNameMessage from "./models/player-name-message";
-import SkipTurnMessage from "./models/skip-turn-message";
-import TieMessage from "./models/tie-message";
-import WinnerMessage from "./models/winner-message";
-import { randomiseColor, switchTurn } from "./player-turn";
-
-export const DanielsConnect4Common = {
-    BoardLogic,
-    Coin,
-    ActionMessage,
-    GameMessage,
-    InitialMessage,
-    SkipTurnMessage,
-    WinnerMessage,
-    TieMessage,
-    PlayerNameMessage,
-    CurrentTurnMessage,
-    DisconnectMessage,
-    ErrorMessage,
-    randomiseColor,
-    switchTurn
-};
+export {BoardLogic as default} from "./board-logic";
+export {Coin} from "./enums/coin";
+export {ActionMessage} from "./models/action-message";
+export {CurrentTurnMessage} from "./models/current-turn-message";
+export {DisconnectMessage} from "./models/disconnect-message";
+export {ErrorMessage} from "./models/error-message";
+export {GameMessage} from "./models/game-message";
+export {InitialMessage} from "./models/initial-message";
+export {PlayerNameMessage} from "./models/player-name-message";
+export {SkipTurnMessage} from "./models/skip-turn-message";
+export {TieMessage} from "./models/tie-message";
+export {WinnerMessage}from "./models/winner-message";
+export {randomiseColor, switchTurn} from "./player-turn";
+export {skipTurnMaxWait} from "./constants";

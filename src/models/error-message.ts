@@ -1,6 +1,6 @@
-import GameMessage from "./game-message";
+import { GameMessage } from "./game-message";
 
-export default class ErrorMessage extends GameMessage {
+export class ErrorMessage extends GameMessage {
     public constructor(error: string) {
         super();
         this.error = error;

@@ -1,6 +1,6 @@
-import GameMessage from "./game-message";
+import { GameMessage } from "./game-message";
 
-export default class DisconnectMessage extends GameMessage {
+export class DisconnectMessage extends GameMessage {
     public constructor() {
         super();
         this.hardDisconnect = true;

@@ -1,6 +1,6 @@
 import { Coin } from "./enums/coin"
 
-export default class BoardLogic {
+export class BoardLogic {
 
     public static columns: number = 9;
     public static rows: number = 8;

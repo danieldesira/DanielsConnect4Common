@@ -1,7 +1,7 @@
 import { Coin } from "../enums/coin";
-import GameMessage from "./game-message";
+import { GameMessage } from "./game-message";
 
-export default class InitialMessage extends GameMessage {
+export class InitialMessage extends GameMessage {
     public constructor(gameId: number, opponentName: string, color: Coin) {
         super();
         this.gameId = gameId;

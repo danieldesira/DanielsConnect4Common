@@ -1,4 +1,4 @@
-export default class GameMessage {
+export class GameMessage {
 
     public static isInitialMessage(msg: any): boolean {
         return (!isNaN(msg['gameId']) && msg['color']) || msg['opponentName'];

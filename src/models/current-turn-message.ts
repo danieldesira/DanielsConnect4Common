@@ -1,7 +1,7 @@
 import { Coin } from "../enums/coin";
-import GameMessage from "./game-message";
+import { GameMessage } from "./game-message";
 
-export default class CurrentTurnMessage extends GameMessage {
+export class CurrentTurnMessage extends GameMessage {
     public constructor() {
         super();
         this.currentTurn = Coin.Empty;

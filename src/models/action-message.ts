@@ -1,7 +1,7 @@
 import { Coin } from "../enums/coin";
-import GameMessage from "./game-message";
+import { GameMessage } from "./game-message";
 
-export default class ActionMessage extends GameMessage {
+export class ActionMessage extends GameMessage {
     public constructor(column: number, action: string, color: Coin) {
         super();
         this.column = column;
