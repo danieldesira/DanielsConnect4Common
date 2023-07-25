@@ -1,10 +1,13 @@
 import { Coin } from "./enums/coin"
 
 export class BoardLogic {
-
     public static columns: number = 9;
     public static rows: number = 8;
 
+    /**
+     * Initialises board matrix
+     * @param board - The board matrix
+     */
     public static initBoard(board: Array<Array<Coin>>) {
         for (let col = 0; col < BoardLogic.columns; col++) {
             board[col] = new Array(BoardLogic.rows);
@@ -14,6 +17,15 @@ export class BoardLogic {
         }
     }
 
+    /**
+     * Counts and checks the coin placeholders adjecent to the specified point (column x row). Matches may occurr, 
+     * vertically, horizontally or diagonally.
+     * @param board - The board matrix
+     * @param column - The column number of the starting point
+     * @param row - The row number of the starting point
+     * @param currentTurn - Coin color to be checked
+     * @returns Count of adjecent coins with the same color
+     */
     public static countConsecutiveCoins(board: Array<Array<Coin>>, column: number, row: number, currentTurn: Coin): number {
         let count: number = row;
         let coinCount: number = 0;
@@ -80,6 +92,11 @@ export class BoardLogic {
         return coinCount;
     }
 
+    /**
+     * Checks if the board matrix is full
+     * @param board The board matrix
+     * @returns True if full, false if not
+     */
     public static isBoardFull(board: Array<Array<Coin>>): boolean {
         let full: boolean = true;
         for (let col: number = 0; col < BoardLogic.columns; col++) {
@@ -92,6 +109,13 @@ export class BoardLogic {
         return full;
     }
 
+    /**
+     * Places coin in a specific column
+     * @param board The board matrix
+     * @param color The color of the coin
+     * @param column The specified column number
+     * @returns Row number where the coin was placed. -1 if column is full.
+     */
     public static putCoin(board: Array<Array<Coin>>, color: Coin, column: number): number {
         for (let row = BoardLogic.rows - 1; row >= 0; row--) {
             if (board[column][row] === Coin.Empty) {
@@ -100,6 +124,5 @@ export class BoardLogic {
             }
         }
         return -1;
-    }
-    
+    }   
 }

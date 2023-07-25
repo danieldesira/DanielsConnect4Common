@@ -1,6 +1,3 @@
-/**
- * @class GameMessage base model
- */
 export class GameMessage {
 
     /**
