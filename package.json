@@ -5,10 +5,13 @@
   "description": "NPM package with common Daniel's Connect4 functionality.",
   "main": "lib/index.js",
   "devDependencies": {
+    "serve": "^14.2.0",
+    "typedoc": "^0.24.8",
     "typescript": "^5.0.3"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc & npx typedoc src/index.ts",
+    "serve": "npx serve -l 5000"
   },
   "bugs": {
     "url": "https://github.com/danieldesira/DanielsConnect4Common/issues",
