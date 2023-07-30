@@ -6,7 +6,6 @@ export {DisconnectMessage} from "./models/disconnect-message";
 export {ErrorMessage} from "./models/error-message";
 export {GameMessage} from "./models/game-message";
 export {InitialMessage} from "./models/initial-message";
-export {PlayerNameMessage} from "./models/player-name-message";
 export {SkipTurnMessage} from "./models/skip-turn-message";
 export {TieMessage} from "./models/tie-message";
 export {WinnerMessage}from "./models/winner-message";

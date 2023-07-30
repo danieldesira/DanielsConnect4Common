@@ -2,6 +2,11 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.19 (Beta - 30/07/2023)
+* Included docs which can be retrieved using local server
+* Removed `PlayerNameMessage` model
+* Included `playerName` in `InitialMessage` model
+
 ### 0.1.18 (Beta - 12/07/2023)
 * Reorganised exports to be imported in a single line
 * Introduced `skipTurnMaxWait` constant
