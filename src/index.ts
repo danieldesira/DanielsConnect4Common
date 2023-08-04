@@ -11,3 +11,5 @@ export {TieMessage} from "./models/tie-message";
 export {WinnerMessage}from "./models/winner-message";
 export {randomiseColor, switchTurn} from "./player-turn";
 export {skipTurnMaxWait} from "./constants";
+export {PlayerStats} from "./models/player-stats";
+export {PlayerInfo} from "./models/player";

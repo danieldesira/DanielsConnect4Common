@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.20 (Beta - 04/08/2023)
+* Included `PlayerStats` and `PlayerInfo` models
+
 ### 0.1.19 (Beta - 30/07/2023)
 * Included docs which can be retrieved using local server
 * Removed `PlayerNameMessage` model
