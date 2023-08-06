@@ -2,6 +2,16 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.23 (Beta - 07/08/2023 1:50AM Malta time)
+* Provide public `resetBoard` method in `BoardLogic` class
+
+### 0.1.22 (Beta - 07/08/2023 1:45AM Malta time)
+* Dropped `board` parameter for pending methods in `BoardLogic` class
+
+### 0.1.21 (Beta - 07/08/2023 1:30AM Malta time)
+* Added `dimensions` constant
+* Modified `BoardLogic` class to allow multiple board dimensions
+
 ### 0.1.20 (Beta - 04/08/2023)
 * Included `PlayerStats` and `PlayerInfo` models
 
