@@ -133,5 +133,23 @@ export class BoardLogic {
             }
         }
         return -1;
-    }   
+    }
+
+    /**
+     * Board matrix setter
+     * @param board The new board matrix
+     */
+    public setBoard(board: Array<Array<Coin>>) {
+        this.board = board;
+    }
+
+    /**
+     * Sets a single board matrix item, at the specified row and column
+     * @param coin The coin color
+     * @param col The column number
+     * @param row The row number
+     */
+    public setBoardItem(coin: Coin, col: number, row: number) {
+        this.board[col][row] = coin;
+    }
 }
