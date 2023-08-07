@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.25 (Beta - 08/08/2023 0:15AM Malta time)
+* Add `BoardDimensions` enum
+
 ### 0.1.24 (Beta - 07/08/2023 2:45PM Malta time)
 * Add board setters
 
