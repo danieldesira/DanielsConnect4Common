@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.26 (Beta - 08/08/2023 11:50PM Malta time)
+* Changed `BoardLogic` constructor to accept just one dimension type parameter
+
 ### 0.1.25 (Beta - 08/08/2023 0:15AM Malta time)
 * Add `BoardDimensions` enum
 

@@ -1,19 +1,56 @@
+import { dimensions } from "./constants";
 import { Coin } from "./enums/coin"
+import { BoardDimensions } from "./enums/dimensions";
 
 export class BoardLogic {
-    private columns: number = 9;
-    private rows: number = 8;
+    private columns: number;
+    private rows: number;
     private board: Array<Array<Coin>> = [];
 
-    public constructor(columns: number, rows: number) {
-        this.columns = columns;
-        this.rows = rows;
+    /**
+     * Initialises the board matrix given the board dimensions
+     * @param dim The board dimensions type
+     */
+    public constructor(dim: BoardDimensions) {
+        switch (dim) {
+            case BoardDimensions.Small:
+                this.columns = dimensions.small.columns;
+                this.rows = dimensions.small.rows;
+                break;
+            case BoardDimensions.Medium:
+                this.columns = dimensions.medium.columns;
+                this.rows = dimensions.medium.rows;
+                break;
+            case BoardDimensions.Large:
+                this.columns = dimensions.large.columns;
+                this.rows = dimensions.large.rows;
+                break;
+        }
+        
         this.initBoard();
     }
 
+    /**
+     * Getter for the number of columns
+     * @returns The number of columns
+     */
     public getColumns = () => this.columns;
+
+    /**
+     * Getter for the number of rows
+     * @returns The number of rows
+     */
     public getRows = () => this.rows;
+
+    /**
+     * Getter for the board matrix
+     * @returns The board matrix
+     */
     public getBoard = () => this.board;
+    
+    /**
+     * Resets the board matrix retaining the given dimensions
+     */
     public resetBoard = () => this.initBoard();
 
     /**
