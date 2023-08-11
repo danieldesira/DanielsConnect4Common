@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.27 (Beta - 12/08/2023 1:25AM Malta time)
+* Added `dimensions` property to `PlayerInfo` model
+
 ### 0.1.26 (Beta - 08/08/2023 11:50PM Malta time)
 * Changed `BoardLogic` constructor to accept just one dimension type parameter
 
