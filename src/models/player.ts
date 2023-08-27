@@ -4,5 +4,4 @@ export interface PlayerInfo {
     user: string;
     picUrl: string;
     dimensions: BoardDimensions;
-    isTokenValid: boolean;
 }

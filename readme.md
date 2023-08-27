@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.29 (Beta - 27/08/2023 11:59PM Malta time)
+* Removed `isTokenValid` property to `PlayerInfo` model
+
 ### 0.1.28 (Beta - 22/08/2023 0:25AM Malta time)
 * Added `isTokenValid` property to `PlayerInfo` model
 
