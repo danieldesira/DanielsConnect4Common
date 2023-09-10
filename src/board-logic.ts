@@ -6,6 +6,7 @@ export class BoardLogic {
     private columns: number;
     private rows: number;
     private board: Array<Array<Coin>> = [];
+    private dimensions: BoardDimensions;
 
     /**
      * Initialises the board matrix given the board dimensions
@@ -27,6 +28,7 @@ export class BoardLogic {
                 break;
         }
         
+        this.dimensions = dim;
         this.initBoard();
     }
 
@@ -41,6 +43,12 @@ export class BoardLogic {
      * @returns The number of rows
      */
     public getRows = () => this.rows;
+
+    /**
+     * Getter for the board dimensions
+     * @returns The board dimensions
+     */
+    public getDimensions = () => this.dimensions;
 
     /**
      * Getter for the board matrix
