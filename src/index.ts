@@ -12,5 +12,5 @@ export {WinnerMessage}from "./models/winner-message";
 export {randomiseColor, switchTurn} from "./player-turn";
 export {skipTurnMaxWait, dimensions} from "./constants";
 export {PlayerStats} from "./models/player-stats";
-export {PlayerInfo} from "./models/player";
+export {PlayerInfo, PlayerSettings} from "./models/player";
 export {BoardDimensions} from "./enums/dimensions";

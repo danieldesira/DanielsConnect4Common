@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.31 (Beta - 11/09/2023 7:00PM Malta time)
+* Added `PlayerSettings` model
+
 ### 0.1.30 (Beta - 10/09/2023 6:15PM Malta time)
 * Added dimensions getter in default class: `getDimensions()`
 
