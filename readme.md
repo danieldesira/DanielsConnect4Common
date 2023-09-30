@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.1.32 (Beta - 30/09/2023 8:30PM Malta time)
+* Added `dimensions` property to `InitialMessage` model
+
 ### 0.1.31 (Beta - 11/09/2023 7:00PM Malta time)
 * Added `PlayerSettings` model
 
