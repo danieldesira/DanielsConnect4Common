@@ -2,6 +2,12 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.2 (Beta - 08/10/2023 11AM Malta time)
+* Updated `isInitialMessage` to also test for `dimensions`
+* Change models to interfaces
+* Delete `SkipTurnMessage`
+* Add more colors to `Coin` enum
+
 ### 0.1.32 (Beta - 30/09/2023 8:30PM Malta time)
 * Added `dimensions` property to `InitialMessage` model
 

@@ -75,12 +75,12 @@ export class BoardLogic {
     }
 
     /**
-     * Counts and checks the coin placeholders adjecent to the specified point (column x row). Matches may occurr, 
+     * Counts and checks the coin placeholders adjacent to the specified point (column x row). Matches may occurr, 
      * vertically, horizontally or diagonally.
      * @param column - The column number of the starting point
      * @param row - The row number of the starting point
      * @param currentTurn - Coin color to be checked
-     * @returns Count of adjecent coins with the same color
+     * @returns Count of adjacent coins with the same color
      */
     public countConsecutiveCoins(column: number, row: number, currentTurn: Coin): number {
         let count: number = row;

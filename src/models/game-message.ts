@@ -8,7 +8,8 @@ export class GameMessage {
      * @static
      */
     public static isInitialMessage(msg: any): boolean {
-        return (!isNaN(msg['gameId']) && msg['color']) || msg['opponentName'];
+        return (!isNaN(msg['gameId']) && msg['color'] && msg['dimensions'] && msg['playerName'])
+            || msg['opponentName'];
     }
 
     /**
@@ -31,17 +32,6 @@ export class GameMessage {
      */
     public static isActionMessage(msg: any): boolean {
         return msg['action'] && !isNaN(msg['column']) && msg['color'];
-    }
-
-    /**
-     * Tests if message is a skip turn message
-     * @param {*} msg - Object to check 
-     * @returns {boolean} Whether message is a skip turn
-     * @public
-     * @static
-     */
-    public static isSkipTurnMessage(msg: any): boolean {
-        return msg['skipTurn'] && msg['currentTurn'];
     }
 
     /**
