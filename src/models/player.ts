@@ -1,4 +1,5 @@
 import { BoardDimensions } from "../enums/dimensions";
+import { Themes } from "../enums/themes";
 
 export interface PlayerInfo {
     user: string;
@@ -7,4 +8,5 @@ export interface PlayerInfo {
 
 export interface PlayerSettings {
     dimensions: BoardDimensions;
+    theme: Themes;
 }

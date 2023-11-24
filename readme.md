@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.2.1 (Beta - 24/11/2023 6:45PM Malta time)
+* Introduced `Themes` enum
+
 ### 0.2 (Beta - 08/10/2023 11AM Malta time)
 * Updated `isInitialMessage` to also test for `dimensions`
 * Change models to interfaces

@@ -13,3 +13,4 @@ export {skipTurnMaxWait, dimensions} from "./constants";
 export {PlayerStats} from "./models/player-stats";
 export {PlayerInfo, PlayerSettings} from "./models/player";
 export {BoardDimensions} from "./enums/dimensions";
+export {Themes} from "./enums/themes";
