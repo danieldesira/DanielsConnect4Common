@@ -2,6 +2,9 @@
 NPM package with common Daniel's Connect4 functionality.
 
 ## Changelog
+### 0.2.2 (Beta - 02/12/2023 10PM Malta time)
+* Introduced `playerPic` and `opponentPic` in `InitialMessage` model
+
 ### 0.2.1 (Beta - 24/11/2023 6:45PM Malta time)
 * Introduced `Themes` enum
 
